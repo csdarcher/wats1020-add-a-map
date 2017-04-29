@@ -21,8 +21,11 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
         <link rel="stylesheet" href="css/main.css">
-
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="crossorigin=""></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+      
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -163,7 +166,7 @@
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="active">
+                <div role="tabpanel" class="tab-pane fade in active" id="active">
                     <div id="description">
                       <h2>About</h2>
                       <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
@@ -171,7 +174,7 @@
                  </div>
 
 
-                 <div role="tabpanel" class="tab-pane" id="history">      
+                 <div role="tabpanel" class="tab-pane fade" id="history">      
                     <div id="history">
                       <h2>History</h2>
                       <p>At the time of European contact, the river valleys and other areas near the mountain were inhabited by many Pacific Northwest tribes who hunted and gathered berries in its forests and mountain meadows. These included the Nisqually, Cowlitz, Yakama, Puyallup, and Muckleshoot.</p>
@@ -187,7 +190,7 @@
                 </div>
 
 
-                  <div role="tabpanel" class="tab-pane" id="stats">     
+                  <div role="tabpanel" class="tab-pane fade" id="stats">     
                     <div id="stats">
                       <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
                                   enhance the HTML if you need to. -->
@@ -242,10 +245,8 @@
     </div> <!-- /container -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-
         <script src="js/main.js"></script>
 
 

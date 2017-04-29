@@ -2,8 +2,35 @@
    Author's custom styles
    ========================================================================== */
 
-#map-container { height: 180px; }
+#map-container { height: 300px; }
 
+
+
+dl {
+	margin-left: 2px;
+	padding: 0;
+  width: 350px;
+}
+
+ dt {
+	background-color: #81b33a;
+	color: black;
+	padding: .5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+}
+
+dd {
+	background: #f8f5f0;
+	padding: 10px;
+	font-style: italic;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
 
 
 
