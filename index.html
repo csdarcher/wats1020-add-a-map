@@ -1,4 +1,4 @@
-<<!doctype html>
+<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -33,6 +33,10 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+      
+    <header>
+        <h1 id="home">Mt. Rainier</h1>
+    </header>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -62,39 +66,29 @@
         </div>
       </div>
     </nav>
-
+</header>
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1 id="home">Mt. Ranier Information</h1>
-        <!-- TODO: Create an HTML structure that will trigger the Bootstrap
-                   carousel feature. http://getbootstrap.com/javascript/#carousel-->
 
+        
+        <!-- Bootstrap Carousel-->
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
-            <li data-target="#Climbers_Crossing_Crevasse_Mt._rainier.jpg" data-slide-to="0" class="active"></li>
-            <li data-target="#Flickr_-_The_U.S._Army_-_Jump_over_Mt._Rainier.jpg" data-slide-to="1"></li>
-            <li data-target="#Mount_Rainier_-_Paradise_-_Dead_Horse_Creek_Trail_-_August_2014_-_01.jpg" data-slide-to="2"></li>
-            <li data-target="#Mount_Rainier_-_Paradise_Meadow_in_July_03.jpg" data-slide-to="3"></li>
-            <li data-target="#Mount_Rainier_and_lake_reflection.jpg" data-slide-to="4"></li>
-            <li data-target="#Mount_Rainier_from_Paradise_meadow_August_2014_-_03.jpg" data-slide-to="5"></li>
-            <li data-target="#Mount_Rainier_sunset_and_clouds.jpg" data-slide-to="6"></li>
-            <li data-target="#Nisqually_River_near_Cougar_Rock_01.jpg" data-slide-to="7"></li>
+            <li data-target="#Flickr_-_The_U.S._Army_-_Jump_over_Mt._Rainier.jpg" data-slide-to="0" class="active"></li>
+            <li data-target="#Mount_Rainier_-_Paradise_-_Dead_Horse_Creek_Trail_-_August_2014_-_01.jpg" data-slide-to="1"></li>
+            <li data-target="#Mount_Rainier_-_Paradise_Meadow_in_July_03.jpg" data-slide-to="2"></li>
+            <li data-target="#Mount_Rainier_and_lake_reflection.jpg" data-slide-to="3"></li>
+            <li data-target="#Nisqually_River_near_Cougar_Rock_01.jpg" data-slide-to="4"></li>
           </ol>
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="img/carousel/Climbers_Crossing_Crevasse_Mt._rainier.jpg" alt="Climbers crossing a crevasse">
-              <div class="carousel-caption">
-                <h3> Climbers crossing a crevasse. </h3>
-              </div>
-            </div>
-            <div class="item">
               <img src="img/carousel/Flickr_-_The_U.S._Army_-_Jump_over_Mt._Rainier.jpg" alt="U.S. Army jump over Mt. Rainier">
               <div class="carousel-caption">
-                <h3> U.S. Army jump over Mt. Rainier. </h3>
+                <h3> Jump over Mt. Rainier </h3>
               </div>
             </div>
             <div class="item">
@@ -106,25 +100,13 @@
             <div class="item">
               <img src="img/carousel/Mount_Rainier_-_Paradise_Meadow_in_July_03.jpg" alt="Paradise Meadow in July">
               <div class="carousel-caption">
-                <h3> Paradise Meadow in July. </h3>
+                <h3> Paradise Meadow in July </h3>
               </div>
             </div>
             <div class="item">
               <img src="img/carousel/Mount_Rainier_and_lake_reflection.jpg" alt="Lake Reflection">
               <div class="carousel-caption">
-                <h3> Lake reflection. </h3>
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/carousel/Mount_Rainier_from_Paradise_meadow,_August_2014_-_03.jpg" alt="Paradise Meadow in August">
-              <div class="carousel-caption">
-                <h3> Paradise Meadow in August. </h3>
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/carousel/Mount_Rainier_sunset_and_clouds.jpg" alt="Sunset and clouds">
-              <div class="carousel-caption">
-                <h3> Sunset and Clouds </h3>
+                <h3> Lake Reflection </h3>
               </div>
             </div>
             <div class="item">
@@ -154,6 +136,8 @@
         <br>
         &mdash; John Muir, Naturalist
       </blockquote>
+     
+       <!-- Tabular Section-->
       <div id="about" role="tabpanel">
 
               <!-- Nav tabs -->
@@ -222,13 +206,7 @@
                     http://leafletjs.com/examples/quick-start.html -->
         
         <!-- Map Script -->
-        <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiY2FzZGFyY2hlciIsImEiOiJjajIxeTFkYWowMDB4MnFrMWlvaGlvYnc2In0.6BLmjV7U2Yuz9GfbBfROtA';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/outdoors-v9'
-        });
-        </script> 
+      
         <div id="map-container"></div>
       </div>
 
@@ -263,3 +241,4 @@
 
     </body>
 </html>
+
