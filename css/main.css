@@ -1,13 +1,12 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 #map-container { height: 300px; }
 
 
  header {
    height: 400px;
-	 padding-top: 0;
+   padding-top: 0;
    background-image: url('../img/carousel/Mount_Rainier_sunset_and_clouds.jpg');
    background-repeat: no-repeat;
    background-position: center center;
@@ -32,8 +31,8 @@ body {
 
 
 dl {
-	margin-left: 2px;
-	padding: 0;
+  margin-left: 2px;
+  padding: 0;
   width: 350px;
 }
 
